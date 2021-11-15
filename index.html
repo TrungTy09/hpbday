@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="/birthday/index.css">
+</head>
+<body>
+    <div class="hpbd">
+        <script src="/birthday/font/confetti.js"></script>
+
+    <script>
+        confetti.start();
+    </script>
+    <div class="bday">
+        Happy Birthday
+    </div>
+    <div class="name">
+        Trinh Thi Quynh Huong
+    </div>
+    <div class="wrapper">
+        <img class="cake" src="/birthday/imgs/7.gif" alt="">
+        <a href="" class="text"></a>
+            <div class="img-area">
+                <div class="single-img img-one js-img-one">   
+                        <img src="/birthday/imgs/1.jpg" alt="">
+          
+                </div>
+                <div class="single-img img-two js-img-two">
+                        <img src="/birthday/imgs/2.jpg" alt="">
+          
+                </div>
+                <div class="single-img img-three js-img-three">
+                        <img src="/birthday/imgs/3.jpg" alt="">          
+                </div>
+                <div class="single-img img-four js-img-four">
+                        <img src="/birthday/imgs/4.jpg" alt="">
+                </div>
+                <div class="single-img img-fine js-img-fine">
+                        <img src="/birthday/imgs/5.jpg" alt="">
+                </div>
+                <div class="single-img img-six js-img-six">
+                    <button>        
+                        <img src="/birthday/imgs/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+            <script>
+                const imgBtn1s = document.querySelector('.js-img-one')
+                function showgift(){
+                    alert("Chúc bạn ngày càng xinh đẹp nè!")
+                }
+                    imgBtn1s.addEventListener('click', showgift)
+            </script>
+
+             <script>
+                const imgBtn2s = document.querySelector('.js-img-two')
+                
+                function showgift(){
+                    alert("Chúc bạn học nhanh thành tài nè!")
+                }
+                    imgBtn2s.addEventListener('click', showgift)
+            </script>
+
+            <script>
+                const imgBtn3s = document.querySelector('.js-img-three')
+                
+                function showgift(){
+                    alert("Chúc bạn sinh nhật có thật nhiều niềm vui nè!")
+                }
+                    imgBtn3s.addEventListener('click', showgift)
+            </script>
+
+            <script>
+                const imgBtn4s = document.querySelector('.js-img-four')
+                
+                function showgift(){
+                    alert("Chúc bạn mau ăn chóng lớn nè!")
+                }
+                    imgBtn4s.addEventListener('click', showgift)
+            </script>
+
+            <script>
+                const imgBtn5s = document.querySelector('.js-img-fine')
+                
+                function showgift(){
+                    alert("Chúc bạn sớm giàu để bao mình ăn nha!")
+                }
+                    imgBtn5s.addEventListener('click', showgift)
+            </script>
+
+            <script>
+                const imgBtn6s = document.querySelector('.js-img-six')
+                
+                function showgift(){
+                    alert("Chúc bạn cao hơn mình!")
+                }
+                    imgBtn6s.addEventListener('click', showgift)
+            </script> 
+            
+    </div>
+    <div class="modal">
+        <div class="modal-box js-modal-box">
+            <img  src="/birthday/imgs/hopquadong.png" id="js-img" alt="boxx">
+        </div>
+            <audio id="music"> 
+               <source src="/birthday/musics/hpbirthday.mp3" type="audio/mp3">
+           </audio>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.modal')
+        function hideshowbox(){
+            modal.classList.add('open')
+        }
+        modal.addEventListener('click',hideshowbox)
+    </script> 
+
+    <script>
+        var music = document.getElementById('music')
+        var icons = document.getElementById('js-img')
+        icons.onclick = function(){
+             music.play();
+        }
+    </script>
+
+</body>
+</html> 
